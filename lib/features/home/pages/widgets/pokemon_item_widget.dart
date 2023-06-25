@@ -72,7 +72,7 @@ class PokemonItemWidget extends StatelessWidget {
                         child: Center(
                           child: Image.network(
                             pokemon.image,
-                            height: 120,
+                            height: 100,
                           ),
                         ),
                       ),

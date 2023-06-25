@@ -5,11 +5,15 @@ class Pokemon {
   final List<String> type;
   final int id;
   final String num;
+  final String height;
+  final String weight;
   factory Pokemon.fromMap(Map<String, dynamic> json) {
     return Pokemon(
       name: json['name'],
       id: json['id'],
       num: json['num'],
+      height : json['height'],
+      weight : json['weight'],
       type: (json['type'] as List<dynamic>)
           .map(
             (e) => e as String,
@@ -28,6 +32,8 @@ class Pokemon {
     required this.type,
     required this.id,
     required this.num,
+    required this.weight,
+    required this.height
   });
 
   static Color? _color({required String type}) {

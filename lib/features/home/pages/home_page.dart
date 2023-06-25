@@ -5,7 +5,6 @@ import '../../../common/models/pokemon.dart';
 import '../../details/container/detail_container.dart';
 import 'info_page.dart';
 
-
 class HomePage extends StatelessWidget {
   const HomePage({Key? key, required this.list, required this.onItemTap})
       : super(key: key);
@@ -35,7 +34,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => InfoPage(),
+                    builder: (context) => const InfoPage(),
                   ),
                 );
               },

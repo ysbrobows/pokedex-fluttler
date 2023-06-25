@@ -63,6 +63,31 @@ class DetailListWidget extends StatelessWidget {
                 ),
               ),
             ),
+                        const SizedBox(height: 16), // Espaçamento entre a imagem e os campos
+            Text(
+              'Type: ${pokemon.type.join(", ")}',
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              'Height: ${pokemon.height}',
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              'Weight: ${pokemon.weight}',
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
           ],
         ),
       ),
